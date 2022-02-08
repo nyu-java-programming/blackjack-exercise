@@ -34,7 +34,20 @@ Additional requirements are written as comments within the given source code fil
 
 ### Sample output
 
-The following are sample outputs from running the program with various outcomes. User responses are indicated. Your program's output should exactly match these patterns.
+The following are sample outputs from running the program with various outcomes. User responses are indicated on the same line as the program output for ease-of-reading only - in all cases user input will actually appear on a separate line.
+
+Your program's output should exactly match these patterns.
+
+#### Sample output: user stands, dealer stands
+
+```
+Welcome to Blackjack!
+Your cards are: 2 and 4
+Would you like to hit or stand? stand
+The dealer stands.
+The dealer's cards are: 8, 7
+Dealer wins!
+```
 
 #### Sample output: dealer wins:
 
