@@ -112,6 +112,10 @@ public class BlackjackTest {
                 if (actual.isUserWon && actual.isDealerWon || actual.isUserWon && actual.isTie || actual.isDealerWon && actual.isTie) {
                     assertEquals("In any run of the program, either the user wins, the dealer wins, or it's a tie", "Your program shows two winners, or shows a winner and a tie at the same time.");
                 }
+                // test for no outcome
+                if (!actual.isUserWon && !actual.isDealerWon && !actual.isTie) {
+                    assertEquals("In any run of the program, someone should win or the players should tie.", "In your program, we did not detect any winner or any tie, based on your output.");
+                }
             }
             catch (Exception e) {
                 assertEquals("Program should not crash!", "Program crashed when testing for either a win of any kind or a tie: " + e); // fail the test if any exception occurs
@@ -171,7 +175,7 @@ public class BlackjackTest {
                 assertEquals("Program should not crash!", "Program crashed when testing various dealer win scenarios: " + e); // fail the test if any exception occurs
             }
         }
-    }    
+    } 
 
     @Test
     public void testTieScenarios() {
