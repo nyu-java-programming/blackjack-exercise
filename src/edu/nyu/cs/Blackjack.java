@@ -132,7 +132,7 @@ public class Blackjack {
     String[] cardsArr = cards.split(",");
     int total = 0;
     for (String card : cardsArr) {
-      total += Integer.parseInt(card.strip());
+      total += Integer.parseInt(card.trim());
     }
     return total;
   }
