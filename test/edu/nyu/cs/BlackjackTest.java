@@ -244,11 +244,11 @@ public class BlackjackTest {
                 // run the program and get the results
                 TestOutput actual = TestOutput.getOne(systemOutRule);
                 // test false negatives
-                if (TestOutput.getTotal(actual.usersCards) > 21 && !actual.isUserBust) {
+                if (actual.userTotal > 21 && !actual.isUserBust) {
                     assertEquals("Expected user to bust when their card total is over 21.", "Your program does not show the user is bust even when their card total is " + actual.userTotal);
                 }
                 // test for false positive
-                if (actual.dealerTotal > 21 && !actual.isDealerBust) {
+                if (actual.userTotal <= 21 && actual.isUserBust) {
                     assertEquals("Expected user to only bust when their card total is over 21.", "Your program shows the user is bust even when their card total is " + actual.userTotal);
                 }
             }
@@ -273,6 +273,7 @@ class TestOutput {
             this.isUserWon = false;
             this.isDealerWon = false;
             this.isTie = false;
+
             // check that first line is welcome message
             if (lines.length > 0 && lines[0].startsWith("Welcome")) {
                 this.isWelcome = true;
