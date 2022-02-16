@@ -131,7 +131,7 @@ Note that in our version of Blackjack, if the user busts, this happens before th
 
 ### Folder structure
 
-Each Java project will have several important directories:
+This project has several important directories:
 
 - `src` - contains the Java source code for the project (i.e. `.java` files)
 - `test` - contains code that will help us determine whether the code you have written works correctly. Do not touch this directory!
@@ -142,7 +142,7 @@ If your project has no dependencies and has not been compiled, you may not see t
 
 ### How to test your work
 
-Automated tests that can help determine whether you have done the work correctly have been included within the `test` directory. Use them as follows:
+Automated tests that can help determine whether you have done the work correctly have been included within the `test` directory. Use them as follows. A [video tutorial](https://www.youtube.com/watch?v=Af6Ka0Bmflo) shows how to do this and overcome any problems:
 
 - Click the Run and Debug icon in the Visual Studio Code activity bar, then click the play button to run your code without using the automated tests. Do this prior to running the tests to make sure your program seems to behave correctly yourself.
 - Open the relevant test file, located within the `test` directory.
