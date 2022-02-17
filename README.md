@@ -155,6 +155,8 @@ If you have trouble running the tests from within Visual Studio Code, you can do
 java -cp "bin:lib/*" org.junit.runner.JUnitCore edu.nyu.cs.TestClassName
 ```
 
+Windows users should replace the `:` in `"bin:lib/*"` with a semi-colon, `;`, i.e. `"bin;lib/*"`
+
 ## How to submit this assignment
 
 Once you have completed the changes to th assignment, you are ready to submit it. Do this from within Visual Studio Code.
