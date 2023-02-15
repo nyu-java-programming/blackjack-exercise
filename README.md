@@ -45,7 +45,8 @@ Welcome to Blackjack!
 Your cards are: 2 and 4
 Would you like to hit or stand? stand
 The dealer stands.
-The dealer's cards are: 8, 7
+Your cards are: 3, 7, 4, and 2
+The dealer's cards are: 8 and 7
 Dealer wins!
 ```
 
@@ -63,7 +64,7 @@ The dealer hits.
 The dealer hits.
 The dealer hits.
 Your cards are: 3, 7, 4, and 2
-The dealer's cards are: 8, 3, 4, 3, 3
+The dealer's cards are: 8, 3, 4, 3, and 3
 Dealer wins!
 ```
 
