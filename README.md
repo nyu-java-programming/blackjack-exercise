@@ -149,6 +149,7 @@ Automated tests that can help determine whether you have done the work correctly
 - Open the relevant test file, located within the `test` directory.
 - Click the Test icon (a beaker) in the Visual Studio Code activity bar and click the play button to run those tests. Tests that pass will be marked with a green checkmark, while those that fail will be marked with a red "X".
 - Each test that fails will show a message with some indication of what went wrong - these messages may help you pinpoint the source of the error.
+- The tests look at your printed output to determine whether your code is behaving correctly or not. They will thus fail if your code's printed output is not formatted correctly, so make sure all formatting, including spaces, commas, and punctuation, is correct.
 
 If you have trouble running the tests from within Visual Studio Code, you can do them from within a Terminal window, assuming the project directory is the current working directory (change `TestClassName` to the relevant name fo the test class.)
 
