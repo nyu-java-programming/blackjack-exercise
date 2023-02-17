@@ -225,7 +225,7 @@ public class BlackjackTest {
                     assertEquals("Expected dealer to bust when their card total is over 21.", "Your program does not show the dealer is bust even when their card total is " + actual.dealerTotal);
                 }
                 // test for false positive
-                if (actual.dealerTotal > 21 && !actual.isDealerBust) {
+                if (actual.dealerTotal <= 21 && actual.isDealerBust) {
                     assertEquals("Expected dealer to only bust when their card total is over 21.", "Your program shows the dealer is bust even when their card total is " + actual.dealerTotal);
                 }
             }
